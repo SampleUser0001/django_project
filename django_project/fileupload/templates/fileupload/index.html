@@ -5,12 +5,11 @@
 </head>
 <h1>File upload</h1>
 
-<form method="POST" enctype="multipart/form-data">
+<form method="POST" enctype="multipart/form-data" class="form">
     <!-- ファイルの送信元を保証する -->
     {% csrf_token %}
 
     <!-- views.index内で生成されるUploadFileFormクラスのオブジェクトをレンダリングできるフォーマットに変換する。 -->
-    {{ form.as_p }}
-
-    <button type="submit">Upload</button>
+    {% bootstrap_form form %}
+    {% bootstrap_button button_type="submit" content="Upload" %}
 </form>
