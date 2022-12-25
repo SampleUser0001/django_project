@@ -18,6 +18,7 @@ from django.urls import include, path
 import fileupload.views as fileupload
 
 urlpatterns = [ 
+    path('usemodel/', include('usemodel.urls')),
     path('fileupload/success/', fileupload.success),
     path('fileupload/', include('fileupload.urls')),    
     path('admin/', admin.site.urls),
