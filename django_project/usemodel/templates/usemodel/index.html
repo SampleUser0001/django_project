@@ -1,0 +1,11 @@
+<h1>Message List</h1>
+{% if message_list %}
+    <ul>
+        {% for model in message_list %}
+        <li>{{ model.message }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+<p>Message is not found.</p>
+{% endif %}
+<a href="add_message">Add Message</a>
