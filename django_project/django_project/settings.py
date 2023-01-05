@@ -149,3 +149,5 @@ LOGGING = {
         'level': 'WARNING',
     },
 }
+
+CSRF_TRUSTED_ORIGINS = ['https://3a5caa305fbe48f8b96fbf040031a010.vfs.cloud9.ap-northeast-1.amazonaws.com']
