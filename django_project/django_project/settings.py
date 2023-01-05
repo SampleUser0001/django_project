@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-!=_p^t4-#g9d_^92$660r8g-wgox_fx#9uu^)7%pz)4ob8p$&n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["3a5caa305fbe48f8b96fbf040031a010.vfs.cloud9.ap-northeast-1.amazonaws.com"]
 
 # Application definition
 
@@ -150,3 +150,5 @@ LOGGING = {
         'level': 'WARNING',
     },
 }
+
+CSRF_TRUSTED_ORIGINS = ['https://3a5caa305fbe48f8b96fbf040031a010.vfs.cloud9.ap-northeast-1.amazonaws.com']
